@@ -2,7 +2,8 @@
 This bash shell script check "Russia and Belarus HTML DoS.html" results
 
 Sample run:
-$ time ./Russia_and_Belarus_DoS.sh 
+$ time ./Russia_and_Belarus_DoS.sh
+
 Removing old files:
 rm: cannot remove 'index.htm*': No such file or directory
 rm: cannot remove 'cloudware_protected.txt': No such file or directory
