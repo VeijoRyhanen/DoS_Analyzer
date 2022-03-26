@@ -10,8 +10,9 @@ If http://dd.elektrykplakal.pl/ is not available, then You can:
 5. Check that there are https adresses and numbers below <i>"Here is the stats of your session..."</i> -text.
 
 Save <i>"Russia and Belarus HTML DoS.html"</i> and <i>"Russia_and_Belarus_DoS.sh"</i> scripts to same directory.
-If You use proxy, update and activate <i>#proxy_option="...</i> -row
-Sample run, all line feeds are not visible here:
+If You use proxy, update and activate <i>#proxy_option="...</i> -row (second row in script).<br>
+
+Sample run, all line feeds are not visible here:<br>
 
 $ time ./Russia_and_Belarus_DoS.sh<br>
 Removing old files:<br>
