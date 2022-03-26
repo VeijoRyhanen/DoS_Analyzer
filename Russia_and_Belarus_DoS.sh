@@ -32,6 +32,8 @@ for url in ${url_list}; do
     rm wget-log.* 2>&1 >/dev/null
 done
 
+echo
 date
 echo -e "\nNumber of servers in \"$src_file\" file: $total"
-echo "Success=$success  Failed servers: $failed Protected servers: $protected"
+echo "Working servers=$success  Failed servers: $failed Protected servers: $protected"
+echo "DoS success rate: `expr 100 \* $(($failed)) / $total`% "
