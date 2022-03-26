@@ -1,7 +1,8 @@
 # DoS_Analyzer
 This bash shell script check "Russia and Belarus HTML DoS.html" results
 
-Sample run:
+Sample run (line feeds are not visible here):
+
 $ time ./Russia_and_Belarus_DoS.sh
 
 Removing old files:
@@ -75,14 +76,17 @@ https://globalna.info/ OK .
 Sat Mar 26 14:42:04 EET 2022
 
 Number of servers in "Russia and Belarus HTML DoS.html" file: 167
+
 Success=58  Failed servers: 106 Protected servers: 3
 
 real	2m23.072s
 user	0m0.648s
 sys	0m0.244s
+
 $ cat cloudware_protected.txt 
 
 https://www.unicreditbank.ru is Cloudware protected ?
 https://kp.ru is Cloudware protected ?
 https://mvd.gov.ru is Cloudware protected ?
+
 
