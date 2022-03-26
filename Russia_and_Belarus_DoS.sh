@@ -12,12 +12,12 @@ declare -ix protected=0
 total=`echo $url_list|wc -w`
 
 echo "Removing old files:"
-rm -iv index.htm* protected.txt wget-log.*
+rm -iv index.htm* cloudware_protected.txt wget-log.*
 
 for url in ${url_list}; do
     timeout 2 > /dev/null wget -q --timeout=1 --read-timeout=1 --dns-timeout=1 --connect-timeout=1 --tries=1 ${proxy_option} $url 2>&1 /dev/null
     if [ $? -eq 124 ];then
-        echo -en "\n$url is Cloudware protected ?"| tee -a protected.txt
+        echo -en "\n$url is Cloudware protected ?"| tee -a cloudware_protected.txt
         let protected=protected+1
     else
         if [ -r index.html ]; then
