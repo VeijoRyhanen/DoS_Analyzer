@@ -102,4 +102,14 @@ $ cat cloudware_protected.txt<br>
 https://norvikbank.ru is Cloudware protected ?<br>
 https://www.unicreditbank.ru is Cloudware protected ?<br>
 
+---------------------------------------
 
+Endless loop:
+
+<i>while : ;do ./Russia_and_Belarus_DoS.sh ;done >> Russia_and_Belarus_DoS.log</i>
+
+<i>Ctrl+z</i> and <i>kill %1</i> command kill endless process.
+
+Examining results:
+
+<i>grep -B 4 success Russia_and_Belarus_DoS.log</i> 
